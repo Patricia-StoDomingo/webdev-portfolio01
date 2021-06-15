@@ -1,0 +1,109 @@
+/* Universal Reset */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 16px;
+}
+
+/* Navbar */
+
+nav {
+	background-color: #130f40;
+	width: 150px;
+	height: 100vh;
+	position: fixed;
+}
+
+div.logo-holder {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.logo-font {
+	font-family: "Montserrat", sans-serif;
+	font-size: 5rem;
+	font-weight: 600;
+	color: #f0932b;
+	width: 80px;
+	height: 80px;
+	background-color: #2f3542;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2rem;
+	border-radius: 10px 10px;
+}
+
+.logo-sub {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 2.3rem;
+	color: white;
+	padding-bottom: .5rem;
+	padding-top: 0;
+	margin: 0;
+	color: #f0932b;
+}
+
+.logo-text {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	color: white;
+}
+
+
+.nav-link {
+	color: #ffbe76;
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 500;
+	text-align: center;
+}
+
+.ext-link {
+
+}
+
+li.navbar-list {
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 1.2rem;
+}
+
+a:hover {
+	color: white;
+	background-color: #ffbe76;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+
+/* logo-font shake effect */
+
+.logo-font:hover {
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
